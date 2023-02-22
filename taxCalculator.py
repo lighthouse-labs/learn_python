@@ -10,5 +10,5 @@ taxRate = 0.14
 tax = subtotal * taxRate
 total = subtotal + tax
 
-print("The taxed owed is " + str(tax))
+print('The taxed owed is ' + str(tax))
 print("The total amount including tax is " + str(total))
