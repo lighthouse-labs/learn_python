@@ -70,20 +70,34 @@
 #     "Derrial Book",
 # ]
 
-actorRoles = [
-    ["Nathan Fallion", "Captain Malcolm Reynalds"],
-    ["Gina Torres", "Zoe Washburn"],
-    ["Alan Tudyk", "Hoban Washburn"],
-    ["Morena Baccarin", "Inara Serra"],
-    ["Adam Baldwin", "Jayne Cobb"],
-    ["Jewel Staite", "Kaylee Frye"],
-    ["Sean Maher", "Dr. Simon Tam"],
-    ["Summer Glau", "River Tam"],
-    ["Ron Glass", "Derrial Book"],
+# actorRoles = [
+#     ["Nathan Fallion", "Captain Malcolm Reynalds"],
+#     ["Gina Torres", "Zoe Washburn"],
+#     ["Alan Tudyk", "Hoban Washburn"],
+#     ["Morena Baccarin", "Inara Serra"],
+#     ["Adam Baldwin", "Jayne Cobb"],
+#     ["Jewel Staite", "Kaylee Frye"],
+#     ["Sean Maher", "Dr. Simon Tam"],
+#     ["Summer Glau", "River Tam"],
+#     ["Ron Glass", "Derrial Book"],
 
-]
-print("Featuring:\n=-=-=-=-=-=-=-=")
-for actorRole in actorRoles:
-    actor = actorRole[0]
-    role = actorRole[1]
-    print(actor + " as " + role)
+# ]
+# print("Featuring:\n=-=-=-=-=-=-=-=")
+# for actorRole in actorRoles:
+#     actor = actorRole[0]
+#     role = actorRole[1]
+#     print(actor + " as " + role)
+# -----------------------------------
+
+# for index, letter in enumerate('abcdefghijklmnopqrstuvwxyz'):
+#     print(letter + " is the " + str(index + 1) + "th letter of the alphabet")
+
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+lettersInWesley = alphabet
+wesley = 'wesly'
+
+for letter in wesley:
+    lettersInWesley = lettersInWesley.replace(letter, letter.upper())
+
+print(lettersInWesley)
