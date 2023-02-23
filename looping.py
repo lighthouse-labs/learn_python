@@ -31,12 +31,59 @@
 
 # print(instructionStepsButScreamed)
 # --------------------------------------
-import time
 
-bacteria = "🌭"
-generations = 10
+# Time is a library in Python
+# import time
 
-for generation in range(0, generations):
-    bacteria = bacteria * 2
-    print(bacteria)
-    time.sleep(0.5)
+# bacteria = "🌭"
+# generations = 10
+
+# for generation in range(0, generations):
+#     bacteria = bacteria * 2
+#     print(bacteria)
+#     time.sleep(0.5)
+
+# ----------------------------------------
+
+
+# actors = [
+#     "Nathan Fallion",
+#     "Gina Torres",
+#     "Alan Tudyk",
+#     "Morena Baccarin",
+#     "Adam Baldwin",
+#     "Jewel Staite",
+#     "Sean Maher",
+#     "Summer Glau",
+#     "Ron Glass"
+# ]
+
+# roles = [
+#     "Captain Malcolm Reynalds",
+#     "Zoe Washburn",
+#     "Hoban Washburn",
+#     "Inara Serra",
+#     "Jayne Cobb",
+#     "Kaylee Frye",
+#     "Dr. Simon Tam",
+#     "River Tam",
+#     "Derrial Book",
+# ]
+
+actorRoles = [
+    ["Nathan Fallion", "Captain Malcolm Reynalds"],
+    ["Gina Torres", "Zoe Washburn"],
+    ["Alan Tudyk", "Hoban Washburn"],
+    ["Morena Baccarin", "Inara Serra"],
+    ["Adam Baldwin", "Jayne Cobb"],
+    ["Jewel Staite", "Kaylee Frye"],
+    ["Sean Maher", "Dr. Simon Tam"],
+    ["Summer Glau", "River Tam"],
+    ["Ron Glass", "Derrial Book"],
+
+]
+print("Featuring:\n=-=-=-=-=-=-=-=")
+for actorRole in actorRoles:
+    actor = actorRole[0]
+    role = actorRole[1]
+    print(actor + " as " + role)
