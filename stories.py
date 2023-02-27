@@ -32,7 +32,7 @@ letterHome = [
     Love,
 
     NAME
-    """
+    """,
     # Replacements
     [
         ["An occupation ", "OCCUPATION"],
@@ -72,7 +72,7 @@ sale = [
 showAndTell = [
     # Title
     "Show and tell",
-    "This is my pet ANIMAL. It's  the best-- No pet can VERB1 as ADVERB as it can. It's NUMBER years old, and it's name is NAME. You can VERB2 it if you want, but be careful, because it might VERB3."
+    "This is my pet ANIMAL. It's  the best-- No pet can VERB1 as ADVERB as it can. It's NUMBER years old, and it's name is NAME. You can VERB2 it if you want, but be careful, because it might VERB3.",
 
     # Replacements
     [
@@ -92,11 +92,14 @@ stories = [
     showAndTell
 ]
 
-
+print("Select a story: ")
+for index, story in enumerate(stories):
+    title = story[0]
+    print(str(index) + " - " + title)
 
 selection = int(input("Choose a story by number -> "))
-story = stories[0]
-poseString = story[1]
+story = stories[selection]
+proseString = story[1]
 replacements = story[2]
 
 for prompt, placeholder in replacements:
